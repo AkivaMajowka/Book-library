@@ -1,1 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+button {
+    margin-bottom: 20px;
+}
+
+.app-wraper {
+    width: 100vw;
+    padding: 50px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto);
+    gap: 20px;
+}
+
+.books-grid h1 {
+    font-size: 25px;
+}
+
+.book-card-wraper {
+    padding: 5px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 1px rgba(0, 0, 0, 0.321) solid;
+    border-radius: 8px;
+    padding: 10px;
+}
