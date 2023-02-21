@@ -62,13 +62,17 @@ function renderLibrary() {
   });
 }
 
+
 // Book constructor
-function book(name, author, pages, didRead, id) {
-  (this.name = name),
-    (this.author = author),
-    (this.pages = pages),
-    (this.didRead = didRead),
-    (this.id = id);
+class book {
+  constructor(name, author, pages, didRead, id) {
+    this.name = name
+    this.author = author
+    this.pages = pages
+    this.didRead = didRead
+    this.id = id;
+  }
+    
 }
 
 function addBookToLibrary(e) {
