@@ -15,10 +15,16 @@ button {
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
     gap: 20px;
-}
+} 
+
+/*.books-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
 
 .books-grid h1 {
     font-size: 25px;
@@ -29,7 +35,11 @@ button {
     height: 150px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     border: 1px rgba(0, 0, 0, 0.321) solid;
     border-radius: 8px;
     padding: 10px;
 }
+
