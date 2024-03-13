@@ -102,6 +102,8 @@ function deleteBook(e) {
   let bookToDelete = e.target.parentElement
   bookToDelete.remove()
 
+  console.log(myLibrary)
+
 }
 
 renderLibrary();
